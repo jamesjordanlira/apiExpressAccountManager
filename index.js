@@ -35,5 +35,5 @@ process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/cuentas', cuentaRoutes);
 
-app.listen(3000);
-console.log('Servidor en el puerto 3000');
+app.listen(process.env.PORT);
+console.log(`Servidor en el puerto ${process.env.PORT}`);

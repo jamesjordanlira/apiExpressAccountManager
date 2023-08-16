@@ -36,4 +36,4 @@ app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/cuentas', cuentaRoutes);
 
 app.listen(process.env.PORT);
-console.log(`Servidor en el puerto ${process.env.PORT}`);
+console.log(`Servidor en el puerto ${process.env.PORT}`); 

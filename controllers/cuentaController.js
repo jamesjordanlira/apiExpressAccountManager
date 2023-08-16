@@ -11,7 +11,7 @@ const nuevaCuenta = async (req, res) => {
     cuenta.creador = req.usuario._id;
 
     try {
-        const cuentaAlmacenada = await cuenta.save()
+        const cuentaAlmacenada = await cuenta.save() 
         res.json(cuentaAlmacenada);
         
     } catch (error) {

@@ -6,7 +6,7 @@ export const emailRegistro = async (datos) => {
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 465, 
+    port: 465,
     secure: true,
     auth: {
       // TODO: replace `user` and `pass` values from <https://forwardemail.net>

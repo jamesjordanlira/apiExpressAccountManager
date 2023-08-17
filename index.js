@@ -27,6 +27,8 @@ const corOptions = {
 
 app.use(cors(corOptions));
 
+process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
+
 app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/cuentas', cuentaRoutes);
 

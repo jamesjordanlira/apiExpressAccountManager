@@ -25,7 +25,7 @@ const corOptions = {
   },
 };
 
-app.use(cors(corOptions));
+app.use(cors(corOptions)); 
 
 app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/cuentas', cuentaRoutes);
